@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var urgencyFilter: UIButton!
     @IBOutlet weak var productNameFilter: UITextField!
+    
+    let transparentView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,6 +21,9 @@ class ViewController: UIViewController {
         productNameFilter.placeholder = "Search product name..."
     }
 
+    @IBAction func clickUrgencyFilter(_ sender: Any) {
+    }
+    
 
 }
 
